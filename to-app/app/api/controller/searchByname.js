@@ -1,8 +1,8 @@
 import axios from "axios";
-
+const apiKEY = process.env.NEXT_PUBLIC_API_KEY;
 export const handleApi = async (search) => {
   const response = await axios.get(
-    `https://www.googleapis.com/customsearch/v1?key=AIzaSyAoIeHs42LKhjXYpOnmgHSuT75XkYl6nUc&cx=b0ebd37c3a2a44c83&q=${search}`
+    `https://www.googleapis.com/customsearch/v1?key=${apiKEY}&cx=b0ebd37c3a2a44c83&q=${search}`
   );
   const responseFilter = response.data.items.slice(0, 2).map((e, index) => {
     let imageSrc;

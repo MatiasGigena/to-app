@@ -2,7 +2,6 @@
 
 import axios from "axios";
 import { useState } from "react";
-import { BiImages } from "react-icons/bi";
 
 const Main = () => {
   const [change, setChange] = useState("");
@@ -27,13 +26,13 @@ const Main = () => {
             onSubmit={onSubmit}
           >
             <input
-              className="w-52 mb-2 bg-transparent border-2 border-white rounded-md h-14 text-white text-md text-center placeholder:text-white placeholder:opacity-[0.85] sm:w-60 sm:text-lg sm:h-[75px] sm:mb-1 md:w-[275px] md:text-xl md:h-20 md:mb-3"
+              className="w-52 mb-2 bg-transparent focus:outline-none border-2 border-white rounded-md h-14 text-white text-md text-center placeholder:text-white placeholder:opacity-[0.85] sm:w-60 sm:text-lg sm:h-[75px] sm:mb-1 md:w-[275px] md:text-xl md:h-20 md:mb-2"
               type="text"
               placeholder=" Search a destiny . . ."
               onChange={(e) => setChange(e.target.value)}
               value={change}
             />
-            <button className="w-72 hover:scale-125 duration-300 h-11 text-md text-white sm:text-lg md:text-xl">
+            <button className="w-72  hover:scale-125 duration-300 h-11 text-md text-white sm:text-lg md:text-xl">
               Gather info!
             </button>
           </form>
