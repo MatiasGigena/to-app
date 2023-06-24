@@ -10,14 +10,10 @@ const NavBar = () => {
         TRIPTWO <GiArchiveResearch className="ml-2 text-xl" />
       </Link>
       <div className=" flex mt-4 ml-0 w-36 gap-2 absolute right-0  ">
-        <Link passHref href="http://localhost:3000/home">
+        <Link passHref href="/home">
           <button className=" text-center  w-12">Home</button>
         </Link>
-        <Link
-          passHref
-          href="http://localhost:3000/about"
-          className="flex  w-32"
-        >
+        <Link passHref href="/about" className="flex  w-32">
           <button className="ml-6 ">About</button>
         </Link>
       </div>
