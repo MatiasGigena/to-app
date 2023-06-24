@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
             autoPlay
             muted
             loop
-            className="w-full h-[90vh] object-cover"
+            className="w-full h-[100vh] object-cover"
           ></video>
 
           {children}

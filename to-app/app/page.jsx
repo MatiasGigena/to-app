@@ -8,9 +8,12 @@ const Home = () => {
       <p className="text-xl text-white absolute font-bold top-14 mt-0 px-10 py-10 w-full text-center sm:text-2xl sm:top-12 md:top-11 md:text-3xl">
         Plan your trips, plan your future.
       </p>
-      <button className="absolute top-[180px] hover:scale-110 transition-transform duration-300 text-white border-white border-2 bg-transpararent p-2 w-40 shadow-xl rounded-xl font-bold sm:text-xl sm:w-48 sm:top-[150px] sm:p-2 md:text-2xl md:w-60 md:h-20 md:top-[160px] md:p-2">
+      <Link
+        href="/home"
+        className=" text-center absolute top-[180px] hover:scale-110 transition-transform duration-300 text-white border-white border-2 bg-transpararent p-2 w-40 shadow-xl rounded-xl font-bold sm:text-xl sm:w-48 sm:top-[150px] sm:p-2 md:text-2xl md:w-60 md:h-20 md:top-[160px] md:p-2"
+      >
         Begin your journey!
-      </button>
+      </Link>
       <div className="absolute top-[300px] h-36 w-64 font-bold  border-white bg-transparent text-white rounded-xl  sm:w-[380px] sm:h-52 sm:top-[260px] md:w-[410px] md:h-[240px] md:top-[280px]">
         <h4 className="text-center mb-2 sm:text-xl sm:mb-1 md:mb-0 md:text-2xl">
           About me
