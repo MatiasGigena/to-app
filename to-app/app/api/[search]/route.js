@@ -6,6 +6,6 @@ export async function GET(request) {
     const response = await handleApi(search);
     return NextResponse.json(response);
   } catch (error) {
-    return NextResponse.json({ error: "error.message" });
+    return NextResponse.json({ error: error.message });
   }
 }
