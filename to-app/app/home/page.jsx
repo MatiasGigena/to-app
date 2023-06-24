@@ -12,6 +12,7 @@ const Main = () => {
     try {
       const response = await axios.get(`/api/search?search=${change}`);
       setResults(response.data);
+      console.log(response);
       setChange("");
     } catch (error) {
       console.error(error);
