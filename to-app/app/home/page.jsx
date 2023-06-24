@@ -18,6 +18,7 @@ const Main = () => {
     }
   };
   console.log(results);
+  console.log(change);
 
   return (
     <div className="absolute h-[100vh]  grid grid-cols-1 place-content-baseline mt-12 place-items-center w-full bg-transparent ">
