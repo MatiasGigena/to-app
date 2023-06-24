@@ -9,9 +9,7 @@ const Main = () => {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    const response = await axios.get(
-      `http://localhost:3000/api/search?search=${change}`
-    );
+    const response = await axios.get(`/api/search?search=${change}`);
 
     setResults(response.data);
     setChange("");
