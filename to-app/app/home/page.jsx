@@ -38,8 +38,8 @@ const Main = () => {
           </form>
           {results.length > 0 && (
             <ul className="text-sm text-white absolute top-[216px] w-full left-2 sm:top-[182px] md:top-[150px]">
-              {results.map((result) => (
-                <div className="my-2">
+              {results.map((result, index) => (
+                <div className="my-2" key={index}>
                   <li className="text-lg font-bold sm:text-xl md:text-2xl">
                     {result.name}
                   </li>
