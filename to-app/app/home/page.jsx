@@ -11,8 +11,7 @@ const Main = () => {
     e.preventDefault();
     try {
       const response = await axios.get(`/api/search?search=${change}`);
-      console.log(response.data);
-      setResults(response);
+      setResults(response.data);
       setChange("");
     } catch (error) {
       console.error(error);
