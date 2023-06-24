@@ -12,15 +12,12 @@ const Main = () => {
     try {
       const response = await axios.get(`/api/search?search=${change}`);
       setResults(response.data);
-      console.log(response);
       setChange("");
     } catch (error) {
       console.error(error);
     }
   };
   console.log(results);
-  console.log(change);
-
   return (
     <div className="absolute h-[100vh]  grid grid-cols-1 place-content-baseline mt-12 place-items-center w-full bg-transparent ">
       <div className=" grid place-content-center rounded-lg h-56 w-96 sm:h-52 md:h-48">
