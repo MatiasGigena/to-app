@@ -11,13 +11,14 @@ const Main = () => {
     e.preventDefault();
     try {
       const response = await axios.get(`/api/search?search=${change}`);
+      console.log(response);
       setResults(response.data);
       setChange("");
     } catch (error) {
-      console.error(error);
+      alert(error);
     }
   };
-  console.log(results);
+
   return (
     <div className="absolute h-[100vh]  grid grid-cols-1 place-content-baseline mt-12 place-items-center w-full bg-transparent ">
       <div className=" grid place-content-center rounded-lg h-56 w-96 sm:h-52 md:h-48">
