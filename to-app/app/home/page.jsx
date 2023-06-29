@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const Main = () => {
   const [change, setChange] = useState("");
-  const [results, setResults] = useState("");
+  const [results, setResults] = useState([]);
 
   const onSubmit = async (e) => {
     e.preventDefault();
